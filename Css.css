@@ -1,0 +1,176 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+#projects{
+  display: flex;
+}
+
+.project {
+  margin-bottom: 30px;
+  flex: 1;
+  min-width: 200px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  background-color: #f2f2f2;
+  align-items: center;
+}
+
+.project img {
+  max-width: 100%;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  main {
+    padding: 10px;
+  }
+  
+  .project img {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+
+.project img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+#skills {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#skills h2 {
+  margin-bottom: 30px;
+}
+
+#skills ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#skills li {
+  margin: 10px;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 1.2em;
+  background-color: #fff;
+}
+
+
+.project .description {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.project.active .description {
+  opacity: 1;
+}
+
+
+#contact {
+  opacity: 1;
+  transform: translateY(50px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+#contact.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+#caro{
+  width: 100%;
+  height: 60%;
+}
